@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVmaze Movie Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+    #results {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+    .error {
+      color: red;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 20px 0;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>TVmaze Movie Search</h1>
+  <input type="text" id="search-input" placeholder="Enter a movie or show name" />
+  <button id="search-button">Search</button>
+  <div id="results"></div>
+  <div id="error-message" class="error"></div>
+  <script src="script.js"></script>
+</body>
+</html>
